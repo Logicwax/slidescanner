@@ -1,11 +1,12 @@
 #!/usr/bin/python
-# see https://www.youtube.com/watch?v=XPCpwcn2Q6w
+# See https://www.youtube.com/watch?v=XPCpwcn2Q6w
 
-#  curl http://picam.local:8080/advance/192.168.1.101/5
+# Example (with 192.168.1.101 being host of digiCamControl):
+# curl http://picam.local:8080/advance/192.168.1.101/5
 
 
-call the pi REST by going to http://<IP Address of Raspberry Pi>/advance/<IP Address of DigiCamContol Webservice>/<integer for the number of slides in tray to advance>
-#remote wires goto top left, and center pin
+#call the pi REST URL by going to http://<IP Address of Raspberry Pi>/advance/<IP Address of DigiCamContol Webservice>/<integer for the number of slides in tray to advance>
+#Remote projector wires goto top left, and center pin
 
 import web, requests
 import RPi.GPIO as GPIO

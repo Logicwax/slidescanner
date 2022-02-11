@@ -8,32 +8,32 @@ I take no credit for this.  This is entirely the work of Phil Ivers who posted o
 ## Parts ##
 
 1. DSLR camera + tripod
-1. 'LEE' brand #216 White Diffusion Filter
-1. MR11 35W Halogen Bulb
-1. 12VDC Power Supply
-1. RasperryPi (with wifi)
-1. JBtek 4 Channel DC 5V Relay Module for Arduino Raspberry Pi
-1. Kodak 4200 Slide Projector
+2. 'LEE' brand #216 White Diffusion Filter
+3. MR11 35W Halogen Bulb
+4. 12VDC Power Supply
+5. RasperryPi (with wifi)
+6. JBtek 4 Channel DC 5V Relay Module for Arduino Raspberry Pi
+7. Kodak 4200 Slide Projector
 
 
 ## Building ##
 
 
 1. Remove factory bulb from the projector and replace with MR11 35W Halogen bulb (use paperclip to hold into place).
-1. Solder wires onto the bulb pins and run out externally to a 12V power supply (polarity not important).
-1. Cut diffusion filter to size and tape (with kapton tape) over lens.
-1. Re-insert lamp assembly.
-1. Wire the following:
-   4.1 Wire pin #6 (GND) of Pi to GND pin of relay board.
-   4.2 Wire pin #4 (5V Power) of Pi to Vcc pin of relay board
-   4.2 Wire pin #3 (GPIO 2) to IN1 pin of relay board.
-   4.3 Wire the normally open (NO) pins of relay #1 to the projector remote advance pins (upper-left and center pins) as shown here:
+2. Solder wires onto the bulb pins and run out externally to a 12V power supply (polarity not important).
+3. Cut diffusion filter to size and tape (with kapton tape) over lens.
+4. Re-insert lamp assembly.
+5. Wire the following:
+   5.1 Wire pin #6 (GND) of Pi to GND pin of relay board.
+   5.2 Wire pin #4 (5V Power) of Pi to Vcc pin of relay board
+   5.2 Wire pin #3 (GPIO 2) to IN1 pin of relay board.
+   5.3 Wire the normally open (NO) pins of relay #1 to the projector remote advance pins (upper-left and center pins) as shown here:
 ![Screenshot](wiring.jpg)
-1. Power on projector (make sure fans run).
-1. Power on 12VDC power supply.
-1. Load slides into projector.
-1. Setup camera on tripod, align, focus.
-1. Connect DSLR camera via USB to windows machine.
+6. Power on projector (make sure fans run).
+7. Power on 12VDC power supply.
+8. Load slides into projector.
+9. Setup camera on tripod, align, focus.
+10. Connect DSLR camera via USB to windows machine.
 
 ## Running ##
 
