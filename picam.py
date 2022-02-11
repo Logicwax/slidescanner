@@ -4,7 +4,6 @@
 # Example (with 192.168.1.101 being host of digiCamControl):
 # curl http://picam.local:8080/advance/192.168.1.101/5
 
-
 #call the pi REST URL by going to http://<IP Address of Raspberry Pi>/advance/<IP Address of DigiCamContol Webservice>/<integer for the number of slides in tray to advance>
 #Remote projector wires goto top left, and center pin
 
@@ -13,16 +12,13 @@ import RPi.GPIO as GPIO
 import time
 
 urls = ('/advance/(.*)/(.*)', 'advance')
-
 app = web.application(urls, globals())
-
 
 class advance:
 
     def GET(self, digi_cam_ip, loops):
 
         for loop in range(0, int(loops)):
-
             # specify how the pins are referred to
             GPIO.setmode(GPIO.BCM)
 
@@ -34,7 +30,6 @@ class advance:
             GPIO.output(pin, GPIO.LOW)
             time.sleep(0.25)
             GPIO.output(pin, GPIO.HIGH)
-
             GPIO.cleanup()
 
             # wait for the projector to advance the slide

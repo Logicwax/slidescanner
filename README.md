@@ -1,6 +1,6 @@
-# Raspberry Pi Automated Slide Scanner #
+# Raspberry Pi Automated 35mm Slide Scanner #
 
-Got 100s or even 1000s of slides to digitize?   All you need is a raspberry Pi, a windows machine, and a few other parts to have an automated slide scanner that can run through entire carousels within minutes!
+Got 100s or even 1000s of 35mm slides to digitize?   All you need is a raspberry Pi, a windows machine, and a few other parts to have an automated slide scanner that can run through entire carousels within minutes!
 
 I take no credit for this.  This is entirely the work of Phil Ivers who posted on youtube [an amazing tutorial for how to build this](https://www.youtube.com/watch?v=XPCpwcn2Q6w) and loosely mentioning his code in the comments section.  All I'm doing is just putting this into one contained git repo for documentation sake.
 
@@ -23,11 +23,11 @@ I take no credit for this.  This is entirely the work of Phil Ivers who posted o
 2. Solder wires onto the bulb pins and run out externally to a 12V power supply (polarity not important).
 3. Cut diffusion filter to size and tape (with kapton tape) over lens.
 4. Re-insert lamp assembly.
-5. Wire the following:
-   5.1 Wire pin #6 (GND) of Pi to GND pin of relay board.
-   5.2 Wire pin #4 (5V Power) of Pi to Vcc pin of relay board
-   5.2 Wire pin #3 (GPIO 2) to IN1 pin of relay board.
-   5.3 Wire the normally open (NO) pins of relay #1 to the projector remote advance pins (upper-left and center pins) as shown here:
+5. Wire the following:   
+   5.1. Wire pin #6 (GND) of Pi to GND pin of relay board.   
+   5.2. Wire pin #4 (5V Power) of Pi to Vcc pin of relay board   
+   5.2. Wire pin #3 (GPIO 2) to IN1 pin of relay board.   
+   5.3. Wire the normally open (NO) pins of relay #1 to the projector remote advance pins (upper-left and center pins) as shown here:
 ![Screenshot](wiring.jpg)
 6. Power on projector (make sure fans run).
 7. Power on 12VDC power supply.
